@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html  lang="en">
+<head>
+    <meta charset="utf-8" >
+    <title>Pizza Form</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+    <style type="text/css">
+    
+	
+    </style>
+</head>
+<body>
+<link rel= "stylesheet" type ="text/css" href= "CATUNGAL_IMAGES_ITAD/CATUNGAL_pizzaForm_ITAD.css"/>
+    <!--Catungal, Mark Angelo-->
+    <!--05.03.2021-->
+    
+	<table>
+		<form>
+		<thead>
+			<tr>
+				<td class= "custInfo" colspan = "2">Customer Information</td>
+			</tr>
+			<div class = "left">
+			<tr>
+				<td><label for="name">Fullname:</label></td>
+				<td><input type="text" name= "name" size= "30" placeholder = "LN, FN MI." maxlength= "50" autofocus required> </td>
+				
+				<tr>
+				<td><label for="address">Complete Address:</label></td>
+				<td><textarea name="address" rows="4" placeholder = "House#, st. " cols="29"></textarea></td>
+				</tr>
+				
+				<tr>
+				<td><label for="contact">Contact Number:</label></td>
+				<td><input type="text" name= "name" size= "30" placeholder = "Type your contact number here.."  maxlength= "50" autofocus required></td>
+				</tr>
+				
+				<tr>
+				<td><label for="email">Email Address:</label></td>
+				<td><input type="text" name= "name" size= "30" placeholder = "Type your email address here.." maxlength= "100" autofocus required></td>
+				</tr>
+				
+				<td><label for="description">How to get to the place:</label></td>
+				<td><textarea id="description" name="description" rows="4" placeholder = "Landmarks" cols="29"></textarea></td>
+			</tr>
+		</thead>
+		<tr>
+			<td class= "orderForm" colspan= "2">Order Form</td>
+		</tr>	
+			<thead>
+				<th>Menu</th>
+				<th>Order</th>
+			</thead>	
+		
+			<tbody>
+				<tr>
+					<td class = "orders" colspan = "2">Burgers</td><br>	
+				</tr>
+				<tr>
+					<td colspan = "2"><img src = "CATUNGAL_IMAGES_ITAD/burgers.jpg"alt = "burgers" title= "different burgers"></td>
+				</tr>
+					<tr>
+						<td><label for= "patty">Patty:</label></td>
+						<td>
+							<input type= "radio" id= "single" name = "patty" value= "single">
+							<label for="single"> Single</label>	
+							<input type= "radio" id= "double"  name = "patty" value= "double">
+							<label for="double"> Double</label><br>
+						</td>
+					</tr>	
+					
+					<tr>
+						<td><label for= "add">Adds-on:</label></td>
+						<td>
+					
+							<input type= "checkbox" id= "cheese" name= "cheese" value= "cheese">
+							<label for= "cheese"> With Cheese </label> <br>
+						
+							<input type= "checkbox" id= "coleslaw" name= "coleslaw" value= "coleslaw">
+							<label for= "coleslaw"> With Coleslaw </label> <br>
+						
+							<input type= "checkbox" id= "tomato" name= "tomato" value= "tomato">
+							<label for= "tomato"> With Tomato </label> <br>
+						
+							<input type= "checkbox" id= "onion" name= "onion" value= "onion">
+							<label for= "onion"> With Onion </label> <br>
+						
+							<input type= "checkbox" id= "cucumber" name= "cucumber" value= "cucumber">
+							<label for= "cucumber"> With Cucumber </label> <br>
+						
+							<input type= "checkbox" id= "bacon" name= "bacon" value= "bacon">
+							<label for= "bacon"> With Bacon </label> <br>
+						</td>
+					</tr>	
+			
+					<tr>
+						<td><label for= "type">Type of Bun:</label></td>
+							<td>
+					
+							<input type= "radio" id= "white" name = "type" value= "white">
+							<label for="white"> White</label>
+							<input type= "radio" id= "wheat" name = "type" value= "wheat">
+							<label for="wheat"> Wheat</label><br>
+						</td>
+					</tr>	
+					<tr>
+						<td><label for="quantity">Quantity:</label></td>
+						<td>
+							<input type="text" name= "quantity" size= "30" autofocus required>
+						</td>
+					</tr>	
+					<tr>
+						<td class = "orders"colspan = "2">Pasta</td>
+					</tr>
+					<tr>
+						<td colspan = "2"><img src = "CATUNGAL_IMAGES_ITAD/pasta.jpg"alt = "pasta" title= "different pasta"></td>
+					</tr>
+					<tr>
+						<td><label for = "pasta"> Type: </label></td>
+						<td>
+							<select name= "pasta" id = "pasta" size = "1">
+							<option value= "carbonara">Carbonara</option>
+							<option value= "pesto">Pesto</option>
+							<option value= "spaghetti">Spaghetti</option>
+							</select>
+						</td>
+					</tr>	
+			
+					<tr>
+						<td><label for="extra">Adds on: </label></td>
+						<td><textarea name="extra" rows="4" placeholder = "eg. (Extra Cheese, Extra Sauce..)" cols="29"></textarea></td>
+						
+					</tr>	
+			
+					<tr>
+						<td><label for="quantity">Quantity (per box):</label></td>
+						<td>
+							<input type="text" name= "quantity" size= "30" autofocus required>
+						</td>
+					</tr>
+					<tr>
+						<td class = "orders" colspan = "2">Fries</td>
+					</tr>
+					<tr>
+						<td colspan = "2"><img src = "CATUNGAL_IMAGES_ITAD/fries.jpg" alt = "fries" title= "different flavor of fries"></td>
+					</tr>
+					<tr>
+						<td><label for="size"> Size </label></td>
+						<td>
+							<select name= "size" id = "size" size = "1">
+							<option value= "small">Small</option>
+							<option value= "medium">Medium</option>
+							<option value= "large">Large</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><label for = "flavor">Flavor: </label></td>
+						<td>
+							<input type="radio" id="bbq" name="flavor" value="bbq">
+							<label for="bbq">Bbq</label>
+							<input type="radio" id="cheese" name="flavor" value="cheese">
+							<label for="cheese">Cheese</label>
+							<input type="radio" id="sourCream" name="flavor" value="sourCream">
+							<label for="sourCream">Sour Cream</label>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="quantity">Quantity:</label></td>
+						<td>
+							<input type="text" name= "quantity" size= "30" autofocus required>
+						</td>
+					</tr>					
+					<tr>
+						<td class = "orders" colspan = "2">Drinks</td>
+					</tr>
+					<tr>
+						<td colspan = "2"><img src = "CATUNGAL_IMAGES_ITAD/drinks.jpg" alt = "drinks" title= "different drinks"></td>
+					</tr>		
+			
+					<tr>
+						<td><label for = "type">Type: </label></td>
+						<td>
+							<input type="radio" id="water" name="type" value="water">
+							<label for="water">Water</label>
+							<input type="radio" id="juice" name="type" value="juice">
+							<label for="juice">Juice</label>
+							<input type="radio" id="softdrinks" name="type" value="softdrinks">
+							<label for="softdrinks">Softdrinks</label>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="size"> Size </label></td>
+						<td>
+							<select name= "size" id = "size" size = "1">
+							<option value= "small">Small</option>
+							<option value= "medium">Medium</option>
+							<option value= "large">Large</option>
+							</select>
+						</td>
+					</tr>					
+					<tr>
+						<td><label for="quantity">Quantity:</label></td>
+						<td>
+							<input type="text" name= "quantity" size= "30" autofocus required>
+						</td>
+					</tr>
+					<tr>
+						<td><label for= "delivery">Delivery: </label></td>
+						<td>
+							<input type= "radio" id= "pick-up"  name = "delivery" value= "pick-up">
+							<label for="pick-up"> Pick-up</label>
+							<input type= "radio" id= "delivery"  name = "delivery" value= "delivery">
+							<label for="delivery">Delivery</label><br>
+						</td>
+					</tr>
+				</div>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td><input type="submit" value="Submit"></td>
+					<td><input type="reset" value="Clear"></td>
+				</tr>	
+			</tfoot>	
+		</form>
+	</table>
+</body>
+</html>
